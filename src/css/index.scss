@@ -1,0 +1,113 @@
+$yellowColor: #FCC344;
+$lightGreyColor: #F7F7F7;
+$blackColor: #000000;
+$whiteColor: #FFFFFF;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Aeroport', sans-serif;
+    font-size: 18px;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 50px;
+    color: $blackColor;
+}
+
+.button {
+    background-color: $yellowColor;
+    border-radius: 16px;
+    text-decoration: none;
+    color: $blackColor;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.alert {
+    height: 70px;
+    background-color: $blackColor;
+    position: relative;
+
+    &-content {
+        height: inherit;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: $whiteColor;
+    }
+
+    &-button {
+        cursor: pointer;
+        position: absolute;
+        top: 25%;
+        right: 19px;
+        height: 33px;
+        width: 33px;
+        background-color: white;
+        border-radius: 50%;
+    }
+}
+
+.header {
+    height: 119px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &-nav {
+        &__menu {
+            display: flex;
+
+            li {
+                &:not(last-child) {
+                    margin-right: 32px;
+                }
+
+                list-style-type: none;
+            }
+        }
+    }
+
+    &-button {
+        font-size: 14px;
+        padding: 14px 27px;
+    }
+}
+
+.main {
+    &-slider {
+        height: 601px;
+
+        &__content {
+            height: 568px;
+            background-color: $lightGreyColor;
+            border-radius: 48px;
+            display: flex;
+
+            &-text {
+                height: inherit;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding-left: 70px;
+
+                p {
+                    font-weight: 400;
+                    font-size: 22px;
+                    line-height: 30px;
+                    color: $blackColor;
+                }
+            }
+        }
+    }
+}
