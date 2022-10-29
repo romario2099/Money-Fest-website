@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/index.css">
     <title>Главная</title>
 </head>
@@ -16,7 +17,9 @@
             <img src="#" alt="ленты черная пятница">
             <p>-30% на все курсы</p>
         </div>
-        <div class="alert-button"></div>
+        <div class="alert-button">
+            <img src="img/icons/x.svg" alt="закрыть объявление">
+        </div>
     </section>
 
     <header class="header container">
@@ -35,20 +38,58 @@
     </header>
 
     <main class="main container">
-        <section class="main-slider">
+        <!-- <section class="main-slider">
             <div class="main-slider__content">
                 <div class="main-slider__content-text">
                     <h1>Учим зарабатывать на криптовалюте с нуля</h1>
-                    <p>Онлайн-школа и профессиональное сообщество</p>
-                    <a href="#" class="button">Выбрать курс</a>
+                    <p class="main-text">Онлайн-школа и профессиональное сообщество</p>
+                    <a href="#" class="button main-button">Выбрать курс</a>
                 </div>
                 <div class="main-slider__content-image">
                     <img src="img/images/interface.png" alt="фото интерфейса">
                 </div>
             </div>
-        </section>
+            <div class="main-slider__arrow-left">
+                <img src="img/icons/chevron-left.svg" alt="стрелка влево">
+            </div>
+            <div class="main-slider__arrow-right"><img src="img/icons/chevron-right.svg" alt="стрелка вправо"></div>
+            <ul class="main-slider__points">
+                <li class="slider-point_active"></li>
+                <li class="slider-point"></li>
+                <li class="slider-point"></li>
+                <li class="slider-point"></li>
+                <li class="slider-point"></li>
+            </ul>
+        </section> -->
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <div class="main-slider__content-text">
+                        <h1>Учим зарабатывать на криптовалюте с нуля</h1>
+                        <p class="main-text">Онлайн-школа и профессиональное сообщество</p>
+                        <a href="#" class="button main-button">Выбрать курс</a>
+                    </div>
+                    <div class="main-slider__content-image">
+                        <img src="img/images/interface.png" alt="фото интерфейса">
+                    </div>
+                </div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+        </div>
     </main>
 
+    <script src="js/swiper-bundle.min.js"></script>
     <script src="js/index.js"></script>
 </body>
 

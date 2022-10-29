@@ -55,6 +55,14 @@ h1 {
         width: 33px;
         background-color: white;
         border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            width: 16px;
+            height: 16px;
+        }
     }
 }
 
@@ -85,29 +93,93 @@ h1 {
 }
 
 .main {
-    &-slider {
+    // &-slider {
+    //     height: 601px;
+    //     position: relative;
+
+    //     &__content {
+    //         height: 568px;
+    //         background-color: $lightGreyColor;
+    //         border-radius: 48px;
+    //         display: flex;
+
+    //         &-text {
+    //             height: inherit;
+    //             display: flex;
+    //             flex-direction: column;
+    //             justify-content: center;
+    //             padding-left: 70px;
+
+    //             p {
+    //                 font-weight: 400;
+    //                 font-size: 22px;
+    //                 line-height: 30px;
+    //                 color: $blackColor;
+    //             }
+
+    //             .main-text {
+    //                 margin: 24px 0 58px;
+    //             }
+
+    //             .main-button {
+    //                 max-width: 186px;
+    //                 font-size: 16px;
+    //                 padding: 17px 39px;
+    //             }
+    //         }
+    //     }
+
+    //     &__arrow-left,
+    //     &__arrow-right {
+    //         position: absolute;
+    //         width: 48px;
+    //         height: 48px;
+    //         background-color: $lightGreyColor;
+    //         border-radius: 50%;
+    //         top: 40%;
+    //         display: flex;
+    //         align-items: center;
+    //         justify-content: center;
+    //         cursor: pointer;
+
+    //         img {
+    //             width: 24px;
+    //             height: 24px;
+    //         }
+    //     }
+
+    //     &__arrow-left {
+    //         left: -5%;
+    //     }
+
+    //     &__arrow-right {
+    //         right: -5%;
+    //     }
+
+    //     &__points {
+    //         display: flex;
+    //         align-items: center;
+    //         justify-content: center;
+    //         height: 9px;
+
+    //         .slider-point {
+    //             height: inherit;
+    //             width: 9px;
+    //             border-radius: 50%;
+    //             background-color: $lightGreyColor;
+    //         }
+
+    //         .slider-point_active {
+    //             height: inherit;
+    //             width: 30px;
+    //             border-radius: 10px;
+    //             background-color: $yellowColor;
+    //         }
+
+    //     }
+    // }
+    .swiper {
+        // width: 600px;
         height: 601px;
-
-        &__content {
-            height: 568px;
-            background-color: $lightGreyColor;
-            border-radius: 48px;
-            display: flex;
-
-            &-text {
-                height: inherit;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                padding-left: 70px;
-
-                p {
-                    font-weight: 400;
-                    font-size: 22px;
-                    line-height: 30px;
-                    color: $blackColor;
-                }
-            }
-        }
     }
 }
